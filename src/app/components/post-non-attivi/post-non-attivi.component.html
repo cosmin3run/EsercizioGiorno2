@@ -1,0 +1,13 @@
+<div class="container mt-5" *ngFor="let postArr of postsArr">
+  <div *ngIf="!postArr.active">
+    <div class="card">
+      <div class="card-header">Post</div>
+      <div class="card-body">
+        <h5 class="card-title">{{ postArr.title }}</h5>
+        <p class="card-text">
+          {{ postArr.body }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
