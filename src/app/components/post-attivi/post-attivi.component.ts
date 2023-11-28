@@ -9,7 +9,7 @@ import { Post } from 'src/app/models/post';
 })
 
 export class PostAttiviComponent implements OnInit {
-postsArr: Post[] = []
+postsArr: Post[] = [];
 
   constructor(private postSrv: PostsService) {
     this.postSrv.getPosts().then(postArr => {
